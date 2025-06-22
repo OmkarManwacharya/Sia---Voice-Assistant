@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sia - Voice Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sia - Voice Assistant</h1>
+        <div class="mic-container">
+            <video id="mic-animation" autoplay loop muted playsinline aria-label="Microphone animation, click to start listening">
+                <source src="voice.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <p id="status" aria-live="polite">Click the microphone to start listening...</p>
+        <div id="response-container" aria-live="assertive"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
